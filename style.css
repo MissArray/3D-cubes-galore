@@ -1,0 +1,247 @@
+
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* BASIC CUBE */
+#cubeContainer {
+    grid-column: 1 / 2;
+    position: relative;
+    perspective: 48rem;
+    margin: 10rem;
+    }
+
+    /* 
+    Animation shorthand reminder (nb: no commas):
+    animation: duration / iteration / direction / name; 
+    */
+#cube {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: 20s infinite linear spin;
+}
+
+    /*Pause animation on hover; resumes when cursor is moved away*/
+#cube:hover {
+    animation-play-state: paused;
+}
+
+.cubeFace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border: 1px;
+    border-style: solid;
+    border-color: slategray;
+    color: darkblue;
+    font-size: 2rem;
+}
+
+.cubeFace > p {
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#cubeTop{
+    background-color: rgba(141, 212, 27, 0.527);
+    transform: translate3d(0, -6rem, -6rem) rotate3d(1, 0, 0, 90deg);
+}
+
+#cubeBottom{
+    background-color: rgba(97, 247, 60, 0.685);
+    transform: translate3d(0, 6rem, -6rem) rotate3d(1, 0, 0, -90deg);
+}
+
+#cubeLeft{
+    background-color: rgba(43, 201, 109, 0.746);
+    transform: translate3d(6rem, 0, -6rem) rotate3d(0, 1, 0, -270deg);
+}
+
+#cubeRight{
+    background-color: rgba(19, 219, 169, 0.89);
+    transform: translate3d(-6rem, 0, -6rem) rotate3d(0, 1, 0, -90deg);
+}
+
+#cubeFront{
+    background-color: rgba(39, 185, 196, 0.959);     
+}
+
+#cubeBack{
+    background-color: rgba(39, 134, 197, 0.698);
+    transform: translate3d(0, 0, -12rem) rotate3d(0, 1, 0, 180deg);
+}
+
+/* -------------- CUBE 1 ------------------- */
+
+#cubeContainer1 {
+    grid-column: 2 / 3;
+    position: relative;
+    perspective: 48rem;
+    margin: 10rem;
+}
+
+#cube1 {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: 20s infinite linear spin;
+}
+
+#cube1:hover {
+    animation-play-state: paused;
+}
+
+.cubeFace1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border: 3rem;
+    border-style: groove;
+    border-color: rgba(112, 128, 144, 0.02);
+    color: rgba(9, 234, 241, 0.938);
+    font-size: 2rem;
+}
+
+.cubeFace1 > p {
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+#cubeTop1{
+    background-color: rgba(13, 187, 135, 0.5);
+    transform: translate3d(0, -6rem, -6rem) rotate3d(1, 0, 0, 90deg);
+}
+
+#cubeBottom1{
+    background-color: rgba(6, 194, 184, 0.514);
+    transform: translate3d(0, 6rem, -6rem) rotate3d(1, 0, 0, -90deg);
+}
+
+#cubeLeft1{
+    background-color: rgba(194, 12, 211, 0.5);
+    transform: translate3d(6rem, 0, -6rem) rotate3d(0, 1, 0, -270deg);
+}
+
+#cubeRight1{
+    background-color: rgba(236, 18, 134, 0.527);
+    transform: translate3d(-6rem, 0, -6rem) rotate3d(0, 1, 0, -90deg);
+}
+
+#cubeFront1{
+    background-color: rgba(231, 123, 22, 0.514);     
+}
+
+#cubeBack1{
+    background-color: rgba(3, 80, 245, 0.507);
+    transform: translate3d(0, 0, -12rem) rotate3d(0, 1, 0, 180deg);
+}
+
+/*------------CUBE 2--------------*/
+
+#cubeContainer2 {
+    grid-column: 4 / 5;
+    position: relative;
+    perspective: 48rem;
+    margin: 10rem;
+}
+
+#cube2 {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    animation: 20s infinite linear spin;
+}
+
+#cube2:hover {
+    animation-play-state: paused;
+}
+
+.cubeFace2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(12, 66, 167);
+    color: rgba(223, 117, 31, 0.993);
+    font-size: 2rem;
+    box-shadow: inset 3px 3px 2rem 0 rgb(8, 4, 253);
+}
+
+.cubeFace2 > p {
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+#cubeTop2{
+    background-color: rgba(19, 226, 164, 0.2);
+    transform: translate3d(0, -6rem, -6rem) rotate3d(1, 0, 0, 90deg);
+}
+
+#cubeBottom2{
+    background-color: rgba(34, 221, 212, 0.2);
+    transform: translate3d(0, 6rem, -6rem) rotate3d(1, 0, 0, -90deg);
+}
+
+#cubeLeft2{
+    background-color: rgba(218, 20, 236, 0.2);
+    transform: translate3d(6rem, 0, -6rem) rotate3d(0, 1, 0, -270deg);
+}
+
+#cubeRight2{
+    background-color: rgba(19, 243, 194, 0.2);
+    transform: translate3d(-6rem, 0, -6rem) rotate3d(0, 1, 0, -90deg);
+}
+
+#cubeFront2{
+    background-color: rgba(155, 6, 192, 0.2);     
+}
+
+#cubeBack2{
+    background-color: rgba(3, 168, 245, 0.2);
+    transform: translate3d(0, 0, -12rem) rotate3d(0, 1, 0, 180deg);
+}
+
+/*-----------------ANIMATION-------------------*/
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    50% {
+        transform: rotateX(0) rotateY(-360deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(0);     /*Finish with a full 360deg rotation for a smooth transition*/
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    #cubeContainer, #cubeContainer1, #cubeContainer2 {
+        grid-column: 1;
+    }
+
+}
