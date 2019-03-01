@@ -3,12 +3,18 @@
 ## Description
 Trying out different designs of 3D cubes created and animated with pure CSS.
 
-## Author: 
+## Graphics
+All images and graphics: &copy; Artemis Gause 2019.
+
+## Author
 Artemis Gause
 
-## Licence:
+## Licence
 MIT
 
+## Notes
+The animation works as expected on Firefox, erratically on Chrome and on Edge.
+This draft has been edited for basic responsiveness, i.e. simply so that the content aligns properly in a single column on smaller screens.
 
 ## Useful sources
 1. Guide to designing basic 3D elements    
