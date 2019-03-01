@@ -3,6 +3,13 @@
 ## Description
 Trying out different designs of 3D cubes created and animated with pure CSS.
 
+## Author: 
+Artemis Gause
+
+## Licence:
+MIT
+
+
 ## Useful sources
 1. Guide to designing basic 3D elements    
     https://www.tutorialrepublic.com/css-tutorial/css3-3d-transforms.php
