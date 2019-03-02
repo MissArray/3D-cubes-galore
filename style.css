@@ -168,7 +168,7 @@ body {
 /*------------CUBE 2--------------*/
 
 #cubeContainer2 {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
     position: relative;
     perspective: 36rem;
     margin: 10rem;
@@ -243,9 +243,93 @@ body {
     transform: translate3d(0, 0, -9rem) rotate3d(0, 1, 0, 180deg);
 }
 
-/* PICTURE CUBE */
-#cubeContainerPic {
+
+/*MARBLED CUBE*/
+
+#cubeContainerMarbled {
     grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    position: relative;
+    perspective: 36rem;
+    margin: 10rem;
+    }
+
+#cubeMarbled {
+    position: relative;
+    width: 9rem;
+    height: 9rem;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    animation: 20s infinite linear spin2;
+    transform-origin: center;
+}
+
+#cubeMarbled:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.cubeFaceMarbled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 9rem;
+    height: 9rem;
+    border: 1px;
+    border-color: rgba(134, 139, 155, 0.781);
+    background-color: goldenrod;
+    color: rgb(49, 156, 175);
+    font-size: 2rem;
+    object-fit: cover;
+}
+
+.cubeFaceMarbled img {
+    width: 9rem;
+    height: 9rem;
+    padding-top: 0.5rem;    
+}
+
+#cubeTopMarbled{
+    background-color: rgba(141, 212, 27, 0.527); 
+    -webkit-transform: translate3d(0, -4.5rem, -4.5rem) rotate3d(1, 0, 0, 90deg);
+    transform: translate3d(0, -4.5rem, -4.5rem) rotate3d(1, 0, 0, 90deg);
+}
+
+#cubeBottomMarbled{
+    background-color: rgba(97, 247, 60, 0.685);
+    -webkit-transform: translate3d(0, 4.5rem, -4.5rem) rotate3d(1, 0, 0, -90deg);
+    transform: translate3d(0, 4.5rem, -4.5rem) rotate3d(1, 0, 0, -90deg);
+}
+
+#cubeLeftMarbled{
+    background-color: rgba(43, 201, 109, 0.746);
+    -webkit-transform: translate3d(4.5rem, 0, -4.5rem) rotate3d(0, 1, 0, -270deg);
+    transform: translate3d(4.5rem, 0, -4.5rem) rotate3d(0, 1, 0, -270deg);
+}
+
+#cubeRightMarbled{
+    background-color: rgba(19, 219, 169, 0.89);
+    -webkit-transform: translate3d(-4.5rem, 0, -4.5rem) rotate3d(0, 1, 0, -90deg);
+    transform: translate3d(-4.5rem, 0, -4.5rem) rotate3d(0, 1, 0, -90deg);
+}
+
+#cubeFrontMarbled{
+    background-color: rgba(39, 185, 196, 0.2); 
+
+}
+
+#cubeBackMarbled{
+    background-color: rgba(39, 134, 197, 0.698);
+    -webkit-transform: translate3d(0, 0, -9rem) rotate3d(0, 1, 0, 180deg);
+    transform: translate3d(0, 0, -9rem) rotate3d(0, 1, 0, 180deg);
+}
+
+
+/* ------------PICTURE CUBE------------ */
+#cubeContainerPic {
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
     position: relative;
     perspective: 36rem;
@@ -271,7 +355,7 @@ body {
     width: 9rem;
     height: 9rem;
     padding-top: 0.5rem;    /*Without this offset, the image isn't properly aligned and overflows the cube face*/
-    }
+}
 
 .cubeFacePic {
     display: flex;
@@ -324,7 +408,7 @@ body {
 }
 
 
-/*-----------------ANIMATION-------------------*/
+/*-----------------ANIMATIONS-------------------*/
 
 @keyframes spin {
     0% {
@@ -341,7 +425,15 @@ body {
     }
 }
 
+@keyframes spin2 {
+  0% { transform: rotate3d(1, 0, 0, 0deg); }
+  25% { transform: rotate3d(1, 0, 0, -360deg); }
+  50% { transform: rotate3d(0, 1, 0, 0deg); }
+  75% { transform: rotate3d(0, 1, 0, -360deg); }
+}
 
+
+/*------MEDIA QUERIES-------*/
 
 @media (max-width: 600px) {
     body {
