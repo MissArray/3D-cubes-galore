@@ -161,8 +161,8 @@ body {
 
 #cubeBack1{
     background-color: rgba(3, 80, 245, 0.507);
-    -webkit-transform: translate3d(0, 0, -9rem) rotate3d(0, 1, 0, 180deg);
-    transform: translate3d(0, 0, -9rem) rotate3d(0, 1, 0, 180deg);
+    -webkit-transform: translate3d(0, 0, -12rem) rotate3d(0, 1, 0, 180deg);
+    transform: translate3d(0, 0, -12rem) rotate3d(0, 1, 0, 180deg);
 }
 
 /*------------CUBE 2--------------*/
